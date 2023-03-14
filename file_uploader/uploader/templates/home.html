@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload_image</title>
+</head>
+<body>
+
+<h1>File upload Platform</h1>
+<p>Upload your file to django</p>
+
+<form method = "post" action="home" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <br>
+    <br>
+    <br>
+    <input type="submit">
+  </form>
+
+  <p>Click the "Submit" button files would be uploaded</p>
+
+
+</body>
+</html>
